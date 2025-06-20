@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Saúde Fácil - Portal SUS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #00695c;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .main {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .card h2 {
+            color: #00695c;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #00695c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Saúde Fácil</h1>
+    <p>Acesso rápido às unidades de saúde do SUS, medicamentos disponíveis e serviços médicos oferecidos.</p>
+</header>
+
+<main class="main">
+    <div class="card">
+        <h2>Medicamentos</h2>
+        <p>Veja quais medicamentos estão disponíveis nas unidades de saúde mais próximas.</p>
+        <a href="">Acessar</a>
+    </div>
+    <div class="card">
+        <h2>Serviços Médicos</h2>
+        <p>Consulte os serviços de saúde oferecidos como exames, consultas e especialidades.</p>
+        <a href="">Acessar</a>
+    </div>
+    <div class="card">
+        <h2>Mapa das Unidades</h2>
+        <p>Encontre no mapa as unidades de saúde mais próximas e veja os recursos disponíveis.</p>
+        <a href="{% url 'mapa_unidades' %}">Acessar</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Saúde Fácil | Projeto de Integração com Dados Públicos do SUS</p>
+</footer>
+
+</body>
+</html>
